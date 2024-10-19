@@ -1,4 +1,4 @@
-# Astronomical Prediction and Analysis System
+# AstroverseAI
 
 ## Overview
 
@@ -25,7 +25,7 @@ It aims to bridge traditional Islamic calendar methodologies with modern data sc
 ## Project Structure
 
 ```
-astronomical_prediction_project/
+AstroverseAI/
 │
 ├── data/
 ├── src/
