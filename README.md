@@ -1,6 +1,6 @@
 # AstroverseAI
 <div align="center">
- <img alt="astroverseai" height="400px" src="https://github.com/al0olo/AstroverseAI/assets/astroverseai.jpg">
+ <img alt="astroverseai" height="400px" src="assets/astroverseai.jpg">
 </div>
 ## Overview
 
