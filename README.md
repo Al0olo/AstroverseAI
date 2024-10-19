@@ -28,32 +28,104 @@ It aims to bridge traditional Islamic calendar methodologies with modern data sc
 AstroverseAI/
 │
 ├── data/
+│   ├── hijri_gregorian_correspondence.csv
+│   ├── historical_eclipses.csv
+│   ├── planetary_eclipse_data/
+│   │   ├── mercury_eclipses.csv
+│   │   ├── venus_eclipses.csv
+│   │   └── ...
+│   └── meteor_shower_data.csv
+│
 ├── src/
 │   ├── data_processing/
+│   │   ├── __init__.py
+│   │   ├── data_loader.py
+│   │   └── preprocessor.py
+│   │
 │   ├── models/
+│   │   ├── __init__.py
 │   │   ├── hijri_model.py
 │   │   ├── eclipse_predictor.py
 │   │   ├── planetary_eclipse_predictor.py
-│   │   └── meteor_shower_predictor.py
+│   │   ├── meteor_shower_predictor.py
+│   │   └── gb_meteor_shower_predictor.py
+│   │
 │   ├── optimization/
+│   │   ├── __init__.py
+│   │   ├── hyperparameter_optimizer.py
+│   │   ├── meteor_shower_optimizers.py
+│   │   └── planetary_eclipse_optimizer.py
+│   │
 │   ├── analysis/
+│   │   ├── __init__.py
+│   │   ├── time_series_model.py
+│   │   └── geographical_analysis.py
+│   │
 │   ├── evaluation/
+│   │   ├── __init__.py
+│   │   └── prediction_evaluator.py
+│   │
 │   └── utils/
+│       ├── __init__.py
+│       └── astronomical_calculations.py
+│
 ├── tests/
+│   ├── __init__.py
 │   ├── test_hijri_model.py
 │   ├── test_eclipse_predictor.py
 │   ├── test_planetary_eclipse_predictor.py
 │   └── test_meteor_shower_predictor.py
+│
 ├── notebooks/
+│   ├── hijri_calendar_analysis.ipynb
+│   ├── eclipse_prediction_analysis.ipynb
+│   ├── planetary_phenomena_analysis.ipynb
+│   └── meteor_shower_analysis.ipynb
+│
 ├── main.py
 ├── main_advanced.py
 ├── requirements.txt
+├── CONTRIBUTING.txt
 └── README.md
 ```
 
 ## Installation
 
-(Installation instructions remain the same)
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/astronomical_prediction_system.git
+   cd astronomical_prediction_system
+   ```
+
+2. Install required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Run the main script:
+   ```
+   python main.py
+   ```
+
+   For advanced features and analysis:
+   ```
+   python main_advanced.py
+   ```
+
+4. To run tests:
+   ```
+   python -m unittest discover tests
+   ```
+
+5. Explore the Jupyter notebooks in the `notebooks/` directory for detailed analysis and visualizations.
+
+## Contributing
+
+Contributions to this project are welcome! Please refer to the `CONTRIBUTING.md` file for guidelines.
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
 
 ## Usage
 
