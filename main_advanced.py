@@ -11,9 +11,11 @@ from time_series_model import TimeSeriesModel
 from geographical_analysis import GeographicalAnalysis
 from datetime import datetime, timedelta
 import unittest
-from test_eclipse_predictor import TestEclipsePredictor
-from test_planetary_eclipse_predictor import TestPlanetaryEclipsePredictor
-from test_meteor_shower_predictor import TestMeteorShowerPredictor
+from tests.test_eclipse_predictor import TestEclipsePredictor
+from tests.test_planetary_eclipse_predictor import TestPlanetaryEclipsePredictor
+from tests.test_meteor_shower_predictor import TestMeteorShowerPredictor
+from tests.test_hijri_model import TestHijriModel
+
 import matplotlib.pyplot as plt
 
 def plot_meteor_shower_predictions(rf_predictions, gb_predictions, shower_name):
@@ -59,6 +61,9 @@ def main():
     regional_results = geo_analyzer.analyze_by_region(data, regions)
     geo_analyzer.plot_regional_performance(regional_results)
 
+    # Run tests for hijri date prediction
+    hijri_suit = unittest.TestLoader().loadTestsFromTestCase(TestHijriModel)
+    unittest.TextTestRunner(verbosity=2).run(hijri_suit)
 
     # Eclipse predictor
     loader = DataLoader('path_to_your_eclipse_data.csv')
