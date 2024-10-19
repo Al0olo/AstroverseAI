@@ -1,6 +1,5 @@
 import sys
 from datetime import datetime, timedelta
-
 from src.data_processing.data_loader import DataLoader
 from src.models.hijri_model import HijriModel
 from src.models.eclipse_predictor import EclipsePredictor
