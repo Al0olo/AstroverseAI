@@ -93,6 +93,36 @@ AstroverseAI/
 └── README.md
 ```
 
+
+## Docker Image
+
+The latest version of this project is available as a Docker image on DockerHub:
+
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/al0olo/astroverseai?label=Docker%20Image)](https://hub.docker.com/r/al0olo/astroverseai)
+
+You can pull the image using:
+
+```bash
+docker pull al0olo/astroverseai:latest
+```
+
+### Running with Docker
+
+To run the application using the pre-built Docker image:
+
+1. Pull the image (if you haven't already):
+   ```bash
+   docker pull al0olo/astroverseai:latest
+   ```
+
+2. Run the container:
+   ```bash
+   docker run -it al0olo/astroverseai:latest
+   ```
+
+This will start the application in interactive mode, allowing you to use the command-line interface.
+
+
 ## Installation
 
 1. Clone the repository:
