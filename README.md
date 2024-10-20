@@ -160,6 +160,32 @@ Explore detailed analyses and visualizations, including meteor shower patterns:
 
 2. Open and run the notebooks in the `notebooks/` directory.
 
+
+## Continuous Integration and Deployment
+
+This project uses GitHub Actions for continuous integration and deployment.
+
+### Automated Testing
+
+On each pull request and push to the main branch, the following steps are automatically performed:
+
+1. The code is checked out.
+2. The project is set up with Python 3.7, 3.8, and 3.9.
+3. All dependencies are installed.
+4. All tests in the `tests` directory are run.
+
+This ensures that new changes do not break existing functionality and that the code works across different Python versions.
+
+### Automated Deployment
+
+When changes are merged into the main branch:
+
+1. A new Docker image is built.
+2. The image is pushed to DockerHub with the tag `latest`.
+
+This allows for easy deployment of the most recent version of the application.
+
+
 ## Data
 
 - Place your Hijri-Gregorian correspondence data in `data/hijri_gregorian_correspondence.csv`
