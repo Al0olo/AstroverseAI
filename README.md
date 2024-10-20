@@ -228,5 +228,3 @@ Ensure your data files follow the required format as described in the data proce
 ## Model Evaluation
 
 Evaluation metrics for all predictions (Hijri dates, Earth eclipses, planetary phenomena, and meteor showers) are output by the main scripts. For a detailed breakdown of the evaluation process, refer to the respective evaluation modules in `src/evaluation/`.
-
-(The rest of the README remains largely the same, with appropriate additions to acknowledgments and citations if new data sources or methodologies were used for the meteor shower predictions.)
