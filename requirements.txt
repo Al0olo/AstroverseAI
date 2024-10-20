@@ -5,7 +5,7 @@ scikit-learn==1.0.2
 
 # Astronomical calculations
 skyfield==1.39
-pyephem==3.7.7.1
+pyephem==3.7.7.0
 
 # Data visualization
 matplotlib==3.5.1
