@@ -1,10 +1,10 @@
 import unittest
 from datetime import datetime
-from data_processing.data_loader import DataLoader
-from data_processing.preprocessor import Preprocessor
-from models.hijri_model import HijriModel
-from utils.astronomical_calculations import AstronomicalCalculator
-from models.hybrid_model import HybridModel
+from src.data_processing.data_loader import DataLoader
+from src.data_processing.preprocessor import Preprocessor
+from src.models.hijri_model import HijriModel
+from src.utils.astronomical_calculations import AstronomicalCalculator
+from src.models.hybrid_model import HybridModel
 
 class TestHijriModel(unittest.TestCase):
     @classmethod
