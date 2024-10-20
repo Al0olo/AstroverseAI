@@ -24,4 +24,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: al0olo/AstroverseAI:latest
+        tags: al0olo/astroverseai:latest
