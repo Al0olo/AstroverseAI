@@ -127,8 +127,8 @@ This will start the application in interactive mode, allowing you to use the com
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/astronomical_prediction_system.git
-   cd astronomical_prediction_system
+   git clone https://github.com/al0olo/AstroverseAI.git
+   cd AstroverseAI
    ```
 
 2. Install required packages:
